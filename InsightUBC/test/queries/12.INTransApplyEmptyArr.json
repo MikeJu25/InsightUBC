@@ -1,0 +1,35 @@
+{
+    "title": "Referenced dataset cannot be empty string, APPLY must be an array",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "340"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id", "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id",
+                "courses_avg"
+            ],
+            "APPLY": [
+
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

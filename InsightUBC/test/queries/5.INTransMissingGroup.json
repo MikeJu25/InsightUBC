@@ -1,0 +1,29 @@
+{
+    "title": "TRANSFORMATIONS missing GROUP",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "340"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id", "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS":{
+
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
